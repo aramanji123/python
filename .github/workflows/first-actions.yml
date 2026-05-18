@@ -7,7 +7,7 @@ jobs:
      runs-on: windows
 
    steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Build
     - run: |
      cd strings
