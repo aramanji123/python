@@ -1,4 +1,4 @@
-Name : python build
+name : python build
 
 on : [push]
 
@@ -7,8 +7,8 @@ jobs:
      runs-on: windows
 
    steps:
-    -uses: actions/checkout@v3
-    -name: Build_app
-     run: |
+    - uses: actions/checkout@v3
+    - name: Build
+    - run: |
      cd strings
      python 01-string-concat.py
