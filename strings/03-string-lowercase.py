@@ -12,4 +12,4 @@ upper_case = str1.upper()
 lower_case = str2.lower()
 
 print("upper_case :", upper_case)
-print("lower_case :",lower_case)
+print("lower_case :", lower_case)
