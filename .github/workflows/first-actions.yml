@@ -1,14 +1,17 @@
-name : python build
+name: Python Build
 
-on : [push]
+on:
+  push:
 
 jobs:
-   build: 
-     runs-on: windows
+  build:
+    runs-on: windows-latest
 
-   steps:
-    - uses: actions/checkout@v4
-    - name: Build
-    - run: |
-     cd strings
-     python 01-string-concat.py
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build
+        run: |
+          cd strings
+          python 01-string-concat.py
