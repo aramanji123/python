@@ -13,12 +13,10 @@ jobs:
 
       - name: Build
         run: |
-          cd strings
           echo " running all the pyhton files.."
           for file in strings/*.py
           do
-          echo " Executing: $file"
-
-          python "$file"
+           echo " Executing: $file"
+           python "$file"
           done
           
