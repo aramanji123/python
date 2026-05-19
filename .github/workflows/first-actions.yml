@@ -5,15 +5,20 @@ on:
 
 jobs:
   build:
-    runs-on: Windows
+    runs-on: windows
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Build
         run: |
           cd strings
-          for file in strings/*.py;do
-          python $file
- #         python 01-string-concat.py
+          echo " running all the pyhton files.."
+          for file in strings/*.py
+          do
+          echo " Executing: $file"
+
+          python "$file"
+          done
+          
