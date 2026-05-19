@@ -14,5 +14,5 @@ jobs:
       - name: Run Shell Script
         shell: bash
         run: |
-          chmod +x strings/1.sh
-          ./strings/1.sh
+          chmod +x run_all.sh
+          ./run_all.sh
