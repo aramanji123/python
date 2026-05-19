@@ -12,11 +12,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build
-        run: |
-          echo " running all the pyhton files.."
-          for file in strings/*.py
-          do
-           echo " Executing: $file"
-           python "$file"
-          done
+      - run:  bash ${GITHUB_WORKSPACE}/strings/1.sh          
+        #for file in strings/*.py
+          #do
+           #echo " Executing: $file"
+           #python "$file"
+          #done
           
