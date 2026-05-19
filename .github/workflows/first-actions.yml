@@ -1,3 +1,5 @@
+name: Python Build
+
 on:
   push:
 
@@ -9,9 +11,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Build
+      - name: Run Shell Script
         shell: bash
         run: |
-        chmod +X strings/1.sh
-        ./strings/1.sh
-           
+          chmod +x strings/1.sh
+          ./strings/1.sh
