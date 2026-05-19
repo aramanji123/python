@@ -17,7 +17,7 @@ do
 
   for file in "$folder"/*.py
   do
-   [-f "$file" ] || continue
+#   [-f "$file" ] || continue
 
    echo "executing $file "
    python "$file"
