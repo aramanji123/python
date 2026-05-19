@@ -1,0 +1,18 @@
+name: Python Build
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Shell Script
+        shell: bash
+        run: |
+          chmod +x run_all.sh
+          ./run_all.sh
