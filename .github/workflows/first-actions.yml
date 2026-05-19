@@ -14,4 +14,6 @@ jobs:
       - name: Build
         run: |
           cd strings
-          python 01-string-concat.py
+          for file in strings/*.py;do
+          python $file
+ #         python 01-string-concat.py
